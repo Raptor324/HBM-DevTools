@@ -11,17 +11,35 @@ Development tools for HBM Modernized mod. Provides runtime model editing and oth
 
 ## Installation
 
-1. Build the mod:
+### Option 1: Local Development (Recommended)
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Raptor324/HBM-DevTools.git
+   cd HBM-DevTools
+   ```
+
+2. Build the mod:
    ```bash
    ./gradlew build
    ```
 
-2. In HBM-Modernized's `build.gradle`, uncomment the DevTools dependency:
+3. In HBM-Modernized's `build.gradle`, add the DevTools dependency:
    ```gradle
-   runtimeOnly fg.deobf("com.hbm_devtools:hbm_devtools:1.0.0-dev")
+   dependencies {
+       // ... other dependencies
+       runtimeOnly files("${projectDir}/../HBM-DevTools/build/libs/hbm_devtools-1.0.0-dev.jar")
+   }
    ```
 
-3. Run the game - DevTools will only work in development environment (not in production builds)
+### Option 2: Maven Repository (Future)
+
+Once published to Maven, you can use:
+```gradle
+runtimeOnly fg.deobf("com.hbm_devtools:hbm_devtools:1.0.0-dev")
+```
+
+**Note**: DevTools will only work in development environment (not in production builds)
 
 ## Usage
 
