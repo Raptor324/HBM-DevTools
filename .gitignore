@@ -1,0 +1,56 @@
+# ================= Gradle & Build Artifacts =================
+# Эти файлы создаются при сборке и не должны быть в репозитории.
+/build/
+/.gradle/
+/run/
+/run-data/
+/bin/
+
+# ================= IDE Specific =================
+# Файлы настроек для разных сред разработки.
+# Они специфичны для каждого пользователя и не должны быть общими.
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Visual Studio Code
+.vscode/
+.cursor/
+
+# ================= Generated Files =================
+/src/generated/
+
+# ================= Logs & Temporary Files =================
+# Логи, дампы ошибок и временные файлы.
+*.log
+hs_err_pid*
+replay_pid*
+temp/
+logs/
+
+# ================= OS Specific =================
+# Системные файлы, которые могут случайно появиться.
+.DS_Store
+Thumbs.db
+.kilocode
+desktop.ini
+
+# ================= Minecraft/Forge Specific =================
+# Файлы, генерируемые средой разработки Forge.
+natives/
+*.srg
+*.tsrg
+forge*changelog.txt
+.fake
+.editorconfig
+
